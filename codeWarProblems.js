@@ -239,3 +239,11 @@ function boolToString(b){
     return b ? 'true':'false';
 
 }
+
+
+///////////////////////////////////////////////////////
+//16
+// Write function avg which calculates average of numbers in given list.
+function avg(arr){
+    return arr.reduce((acc,cur)=>acc+cur);
+}
