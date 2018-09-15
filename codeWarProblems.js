@@ -22,3 +22,14 @@ function makeUpperCase(thing){
     let toUpper = word.map(letter=> {return letter.toUpperCase()})
    return toUpper.join('');
 }
+
+//3
+function addLength(string){
+    let init = string.split(' ');
+    let numbers = init.map(number=>{return number.length})
+    let ret=[];
+   for(let i=0;i<init.length;i++){
+        ret.push(init[i]+' '+numbers[i])
+   } 
+   return ret.join(' ')
+}
