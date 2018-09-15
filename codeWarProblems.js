@@ -117,3 +117,12 @@ function idea(x){
     let publish= good===0 ?'fail':good>2?'I smell a series!':'Publish';
     return publish
 }
+
+//9
+// I'm new to coding and now I want to get the sum of two arrays...actually the sum of all their elements. I'll appreciate for your help.
+
+// P.S. Each array includes only integer numbers. Output is a number too.
+function summer(arr1,arr2){
+    let sum = arr1.reduce((acc,cur)=>acc+cur)+arr2.reduce((acc,cur)=>acc+cur);
+    return sum
+}
