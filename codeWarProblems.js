@@ -170,3 +170,10 @@ function doomsDayClock(arr){
     agesMul= Math.floor(Math.sqrt(agesMul)/2);
     return agesMul
 }
+//12
+// Time to test your basic knowledge in functions! Return the odds from a list:
+//
+// odds([1,2,3,4,5]) #=> [1,3,5]
+function oddGetter(arr){
+    return arr.filter(x=>{return x%2!==0})
+}
