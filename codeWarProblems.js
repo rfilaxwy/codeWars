@@ -15,3 +15,10 @@ function initials(name){
         return name[0]})
     return initials.join('.');
 }
+// 2
+// Write function makeUpperCase.
+function makeUpperCase(thing){
+    let word = thing.split('');
+    let toUpper = word.map(letter=> {return letter.toUpperCase()})
+   return toUpper.join('');
+}
