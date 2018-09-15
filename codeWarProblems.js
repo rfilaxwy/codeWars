@@ -83,3 +83,37 @@ function tripCombine(str1,str2,str3){
     }
     return combined.join('')
 }
+//7
+//Given a non-negative integer n, write a function toBinary/ToBinary which returns that number in a binary format.
+//NOT CORRECT
+function toBinary(n){
+    let start = n;
+    let bin=[]
+    while(start>0){
+        if(start%2===0){
+            bin.push(0)
+            start=Math.floor(start/2)
+        } else{
+            bin.push(1)
+            start=Math.floor(start/2)
+        }  
+    }
+    return bin.join('')
+}
+
+//8
+// For every good kata idea there seem to be quite a few bad ones!
+
+// In this kata you need to check the provided array (x) for good ideas 'good' and bad ideas 'bad'. If there are one or two good ideas, return 'Publish!', if there are more than 2 return 'I smell a series!'. If there are no good ideas, as is often the case, return 'Fail!'.
+function idea(x){
+    let good =0
+   
+    for(let i=0;i<x.length;i++){
+        if(x[i]==='good'){
+            good+=1;
+        }
+        
+    }
+    let publish= good===0 ?'fail':good>2?'I smell a series!':'Publish';
+    return publish
+}
