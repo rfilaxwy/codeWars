@@ -296,7 +296,42 @@ function is_divide_by(nu1,nu2,nu3){
     }
 }
 
+//20
+// Kata Task
+// I have a cat and a dog.
 
+// I got them at the same time as kitten/puppy. That was humanYears or human_years years ago.
+
+// Return their respective ages now as [humanYears,catYears,dogYears] or [human_years,cat_years,dog_years]
+
+// NOTES:
+
+// humanYears >= 1
+// Cat Years
+// 15 cat years for first year
+// +9 cat years for second year
+// +4 cat years for each year after that
+// Dog Years
+// 15 dog years for first year
+// +9 dog years for second year
+// +5 dog years for each year after that
+function dogCat(hyears){
+    let catYears=0;
+    let dogYears=0;
+    for(let i=0;i<hyears;i++){
+        if(i==1){
+            catYears+=15
+            dogYears+=15
+        }else if(i==2){
+            catYears+=9;
+            dogYears+=9
+        } else{
+            catYears+=4;
+            dogYears+=5;
+        }
+    }
+    return [hyears,catYears,dogYears]
+}
 
 
 
